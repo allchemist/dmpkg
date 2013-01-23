@@ -1,0 +1,16 @@
+exportPattern("^[[:alpha:]]+")
+exportMethods(
+    "as.dataframe.patterns",
+    "as.matrix.patterns",
+    "kernlab.call",
+    "patterns.dims",
+    "patterns.getSingle",
+    "patterns.num",
+    "patterns.split" 
+)
+exportClasses(
+    "dataframe.patterns",
+     "matrix.patterns",
+     "matrix|NA",
+     "patterns" 
+)
