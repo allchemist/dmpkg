@@ -1,16 +1,11 @@
 #################################################################
 ##### patterns interface
 
-## moved to AllClasses.r
-#setClassUnion('matrix|NA', members=c('matrix', 'logical'));
-#setClass('dataframe.patterns', representation(formula='formula', data='data.frame', weights='matrix|NA'));
-#setClass('matrix.patterns', representation(data='matrix', outputs='matrix', weights='matrix|NA', formula='formula'));
-#setClassUnion(name='patterns', members=c('dataframe.patterns', 'matrix.patterns'));
+setClassUnion('matrix|NA', members=c('matrix', 'logical'));
+setClass('dataframe.patterns', representation(formula='formula', data='data.frame', weights='matrix|NA'));
+setClass('matrix.patterns', representation(data='matrix', outputs='matrix', weights='matrix|NA', formula='formula'));
+setClassUnion(name='patterns', members=c('dataframe.patterns', 'matrix.patterns'));
 
-#setMethod('patterns.check', 'dataframe.patterns',
-#          function(pats) {
-#            for (i in 1:length(pats@data)) {
-#              if length(pats@data
 
 ## patterns dimensions
 
